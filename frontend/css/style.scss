@@ -1,0 +1,95 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+// body {
+
+// }
+nav {
+        padding: 10px;
+        background-color: rgb(90, 90, 204);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        h1 {
+                color: white;
+                margin-left: 2rem;
+        }
+
+        ul {
+                text-decoration: none;
+                display: flex;
+                gap: 30px;
+
+                li {
+                        list-style: none;
+
+                        a {
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                cursor: pointer;
+                                color: white;
+                                text-decoration: none;
+                        }
+                }
+        }
+}
+
+.container {
+        border: 1px solid black;
+        .container-agenda {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .titles {
+                        margin: 20px;
+                        margin-bottom: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                }
+                .alert-danger {
+                        font-size: 1.3rem;
+                        background-color: rgba(255, 192, 203, 0.192);
+                        border-radius: 10px;
+                        border: 1px solid red;
+                        color: rgb(124, 1, 1);
+                        padding: 10px 20px;
+                }
+
+                table {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: azure;
+                        margin: 10px;
+                        padding: 10px;
+                        border: 1px solid black;
+                        tr {
+                                display: flex;
+                                gap: 40px;
+                                border: 1px solid black;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                td {
+                                        font-weight: bold;
+                                        padding: 10px;
+                                        background-color: aquamarine;
+                                }
+                        }
+                }
+        }
+}
+
+.login {
+        background-color: gray;
+}
