@@ -8,14 +8,17 @@
 
 // }
 nav {
-        margin: 0px 0px 0px 0px ;
+        .h1-logado {
+                color: white;
+                margin-left: 7.5em;
+        }
+        margin: 0px 0px 0px 0px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
         padding: 10px;
         background-color: rgb(90, 90, 204);
-       
 
         ul {
                 display: flex;
@@ -23,18 +26,38 @@ nav {
                 justify-content: space-between;
                 text-decoration: none;
                 gap: 30px;
-                margin: 10px 20px 10px 20px ;
+                margin: 10px 20px 10px 20px;
 
                 li {
                         list-style: none;
 
                         a {
-                                font-size: 1.2rem;
+                                font-size: 1.5rem;
                                 font-weight: bold;
                                 cursor: pointer;
                                 color: white;
                                 text-decoration: none;
                         }
+                }
+        }
+        .nav-logado {
+                color: white;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-sair {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        cursor: pointer;
+                        color: white;
+                        text-decoration: none;
+                        transition: 0.5s;
+                }
+                .btn-sair:hover {
+                        color: aqua;
+                        text-decoration: underline;
                 }
         }
 }
@@ -57,7 +80,6 @@ nav {
                         font-size: 1.1rem;
                         font-weight: bold;
                 }
-                
 
                 table {
                         display: flex;
@@ -89,11 +111,11 @@ nav {
         border-radius: 10px;
         border: none;
         color: rgb(124, 1, 1);
-        padding: 10px ;
+        padding: 10px;
         margin-bottom: 40px;
         text-align: center;
 }
-.alert-sucess{
+.alert-sucess {
         margin: auto;
         width: 350px;
         font-size: 1.1rem;
@@ -101,7 +123,7 @@ nav {
         border-radius: 10px;
         border: none;
         color: rgb(24, 121, 0);
-        padding: 10px ;
+        padding: 10px;
         margin-bottom: 40px;
         text-align: center;
 }
@@ -121,7 +143,6 @@ nav {
         justify-content: space-evenly;
         // border: 1px solid black;
         border-radius: 10px;
-        
 
         .titulos {
                 display: flex;
@@ -159,6 +180,8 @@ nav {
                         .cadastro-form-group {
                                 display: flex;
                                 flex-direction: column;
+                                margin: 10px 0px 10px 0px;
+
                                 label {
                                         font-size: 1.2rem;
                                 }
@@ -230,8 +253,7 @@ nav {
         }
 }
 
-
-.pag-error{
+.pag-error {
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -241,13 +263,70 @@ nav {
                 margin-top: 5rem;
                 font-size: 8rem;
         }
-        p{
+        p {
                 font-size: 1.3rem;
         }
 }
 
-.footer {
+.contato {
+        width: 1400px;
+        margin: auto;
         
+        
+        .form-contato{
+        
+                
+                margin: 150px;
+                padding-top: 20px;
+                padding-bottom:50px;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid black;
+
+                h1{
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                }
+                button {
+                        margin-top: 10px;
+                        letter-spacing: 1px;
+                        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                        padding: 10px 30px;
+                        font-weight: bold;
+                        border-radius: 10px;
+                        cursor: pointer;
+
+                        border: 1px solid rgb(0, 0, 0);
+                        transition: 0.5s;
+                }
+                button:hover {
+                        background-color: rgba(50, 50, 216, 0.671);
+                }
+
+                .contato-group{ 
+                        border: 1px;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        label{
+                                font-size: 1.1rem;     
+                        }
+                        input{
+                                border: 1px solid black;
+                                font-size: 1rem;
+                                border-radius: 10px;
+                                padding: 10px;
+                        }
+                }
+        }
+
+}
+
+.footer {
         position: absolute;
         bottom: 0;
         width: 100%;

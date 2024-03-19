@@ -36,6 +36,10 @@ nav {
   padding: 10px;
   background-color: rgb(90, 90, 204);
 }
+nav .h1-logado {
+  color: white;
+  margin-left: 7.5em;
+}
 nav ul {
   display: flex;
   flex-direction: row;
@@ -48,11 +52,30 @@ nav ul li {
   list-style: none;
 }
 nav ul li a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   color: white;
   text-decoration: none;
+}
+nav .nav-logado {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-logado .btn-sair {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav .nav-logado .btn-sair:hover {
+  color: aqua;
+  text-decoration: underline;
 }
 
 .container {
@@ -174,6 +197,7 @@ nav ul li a {
 .display-login .sing-in .form-cadastro .cadastro-form-group {
   display: flex;
   flex-direction: column;
+  margin: 10px 0px 10px 0px;
 }
 .display-login .sing-in .form-cadastro .cadastro-form-group label {
   font-size: 1.2rem;
@@ -253,6 +277,55 @@ nav ul li a {
   font-size: 1.3rem;
 }
 
+.contato {
+  width: 1400px;
+  margin: auto;
+}
+.contato .form-contato {
+  margin: 150px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.contato .form-contato h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.contato .form-contato button {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.contato .form-contato button:hover {
+  background-color: rgba(50, 50, 216, 0.671);
+}
+.contato .form-contato .contato-group {
+  border: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contato .form-contato .contato-group label {
+  font-size: 1.1rem;
+}
+.contato .form-contato .contato-group input {
+  border: 1px solid black;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -261,7 +334,7 @@ nav ul li a {
   color: #fff;
   padding: 10px 0;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */`, "",{"version":3,"sources":["webpack://./frontend/css/style.scss","webpack://./frontend/css/style.css"],"names":[],"mappings":"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","sourceRoot":""}]);
+}/*# sourceMappingURL=style.css.map */`, "",{"version":3,"sources":["webpack://./frontend/css/style.scss","webpack://./frontend/css/style.css"],"names":[],"mappings":"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","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

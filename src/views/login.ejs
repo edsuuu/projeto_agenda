@@ -18,6 +18,11 @@
                          <form class="form-cadastro" action="/login/register" method="post">
                               <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                               <div class="cadastro-form-group">
+                                   <label for="cname">Digite seu nome</label>
+                                   <input class="cadastro-form-control" type="text" name="name" id="cname"
+                                        placeholder="Digite seu nome" required>
+                              </div>
+                              <div class="cadastro-form-group">
                                    <label for="cemail">Digite seu e-mail</label>
                                    <input class="cadastro-form-control" type="email" name="email"
                                         placeholder="Digite seu E-mail" id="cemail" autocomplete="email" required>

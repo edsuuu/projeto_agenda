@@ -5,10 +5,28 @@
                 </li>
         </ul>
 
+        <% if(user) { %>
+
         <ul>
                 <li>
-                        <a href="/login/index">Faça login</a>
+                        <h1 class="h1-logado">Olá, <%= user.name %> </h1>
                 </li>
+        </ul>
+        <% }%>
+
+        <ul class="nav-logado">
+                <% if(user) { %>
+                        
+                        <a class="btn-sair"  href="/login/logout">Sair da Conta</a>
+                        </li>
+                        </h1>
+                        <a class="btn-sair"  href="/contato/index">Seus Contatos</a>
+                        </li>
+                        <% } else {%>
+                                <li>
+                                        <a href="/login/index">Entrar</a>
+                                </li>
+                                <%}%>
 
         </ul>
 </nav>
