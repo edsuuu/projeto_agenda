@@ -28,21 +28,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
 }
 
 nav {
-  padding: 10px;
-  background-color: rgb(90, 90, 204);
+  margin: 0px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-}
-nav h1 {
-  color: white;
-  margin-left: 2rem;
+  padding: 10px;
+  background-color: rgb(90, 90, 204);
 }
 nav ul {
-  text-decoration: none;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
   gap: 30px;
+  margin: 10px 20px 10px 20px;
 }
 nav ul li {
   list-style: none;
@@ -73,16 +73,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  text-transform: uppercase;
   font-weight: bold;
-}
-.container .container-agenda .alert-danger {
-  font-size: 1.3rem;
-  background-color: rgba(255, 192, 203, 0.192);
-  border-radius: 10px;
-  border: 1px solid red;
-  color: rgb(124, 1, 1);
-  padding: 10px 20px;
 }
 .container .container-agenda table {
   display: flex;
@@ -105,9 +96,172 @@ nav ul li a {
   background-color: aquamarine;
 }
 
-.login {
-  background-color: rgb(255, 0, 0);
-}/*# sourceMappingURL=style.css.map */`, "",{"version":3,"sources":["webpack://./frontend/css/style.scss","webpack://./frontend/css/style.css"],"names":[],"mappings":"AAAA;EACQ,SAAA;EACA,UAAA;EACA,sBAAA;ACCR;;ADKA;EACQ,aAAA;EACA,kCAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,mBAAA;ACFR;ADIQ;EACQ,YAAA;EACA,iBAAA;ACFhB;ADKQ;EACQ,qBAAA;EACA,aAAA;EACA,SAAA;ACHhB;ADKgB;EACQ,gBAAA;ACHxB;ADKwB;EACQ,iBAAA;EACA,iBAAA;EACA,eAAA;EACA,YAAA;EACA,qBAAA;ACHhC;;ADSA;EACQ,uBAAA;ACNR;ADOQ;EACQ,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;ACLhB;ADMgB;EACQ,YAAA;EACA,kBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBAAA;EACA,iBAAA;ACJxB;ADMgB;EACQ,iBAAA;EACA,4CAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;EACA,kBAAA;ACJxB;ADOgB;EACQ,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;ACLxB;ADMwB;EACQ,aAAA;EACA,SAAA;EACA,uBAAA;EACA,gBAAA;EACA,mBAAA;ACJhC;ADKgC;EACQ,iBAAA;EACA,aAAA;EACA,4BAAA;ACHxC;;ADUA;EACQ,gCAAA;ACPR,CAAA,oCAAA","sourceRoot":""}]);
+.alert-danger {
+  margin: auto;
+  width: 400px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 192, 203, 0.623);
+  border-radius: 10px;
+  border: none;
+  color: rgb(124, 1, 1);
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.alert-sucess {
+  margin: auto;
+  width: 350px;
+  font-size: 1.1rem;
+  background-color: rgba(138, 228, 153, 0.582);
+  border-radius: 10px;
+  border: none;
+  color: rgb(24, 121, 0);
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.display-sub-head {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+
+.display-login {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.display-login .titulos {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 20px 0px;
+  gap: 10px;
+  align-items: center;
+}
+.display-login .titulos h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  padding: 10px;
+}
+.display-login .titulos p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.display-login .sing-in {
+  width: 550px;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  box-shadow: 4px 3px 15px 5px rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+}
+.display-login .sing-in .form-cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.display-login .sing-in .form-cadastro .cadastro-form-group {
+  display: flex;
+  flex-direction: column;
+}
+.display-login .sing-in .form-cadastro .cadastro-form-group label {
+  font-size: 1.2rem;
+}
+.display-login .sing-in .form-cadastro .cadastro-form-group .cadastro-form-control {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+.display-login .sing-in .form-cadastro button {
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.3s;
+}
+.display-login .sing-in .form-cadastro button:hover {
+  background-color: rgba(50, 50, 216, 0.671);
+}
+.display-login .log-in {
+  border-radius: 10px;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  width: 550px;
+  box-shadow: 4px 3px 15px 5px rgba(0, 0, 0, 0.384);
+}
+.display-login .log-in .form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.display-login .log-in .form-login .form-login-group {
+  display: flex;
+  flex-direction: column;
+}
+.display-login .log-in .form-login .form-login-group label {
+  font-size: 1.2rem;
+}
+.display-login .log-in .form-login .form-login-group .form-login-control {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+.display-login .log-in .form-login button {
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.display-login .log-in .form-login button:hover {
+  background-color: rgba(50, 50, 216, 0.671);
+}
+
+.pag-error {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pag-error h1 {
+  margin-top: 5rem;
+  font-size: 8rem;
+}
+.pag-error p {
+  font-size: 1.3rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */`, "",{"version":3,"sources":["webpack://./frontend/css/style.scss","webpack://./frontend/css/style.css"],"names":[],"mappings":"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","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -36,14 +36,12 @@ const sessionOptions = session({
 app.use(sessionOptions);
 app.use(flash());
 
-app.set('views', path.resolve(__dirname, 'views'));
-
+app.set('views', path.resolve(__dirname, './views'));
+app.use('/public', express.static('public', { 'Content-Type': 'application/javascript' }));
 app.set('view engine', 'ejs');
-
-// PARA USAR EM DESENVOLVIMENTO DEIXAR COMENTADO, EM PRODUCAO DESCOMENTAR AQUI E NO INDEX.EJS
-// app.use(csrf());
-// app.use(csrfMiddleware);
-// app.use(checkCsrfError);
+app.use(csrf());
+app.use(csrfMiddleware);
+app.use(checkCsrfError);
 
 app.use(middlewareGlobal);
 

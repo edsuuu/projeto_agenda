@@ -1,7 +1,57 @@
 <%- include('includes/head') %>
      <%- include('includes/navbar') %>
-          <div class="login">
-               testando o login
-               <h1>label</h1>
+          <div class="display-sub-head">
+               <h1>Crie conta ou entrar</h1>
+               <p>Faça login ou crie sua conta abaixo</p>
           </div>
-          <%- include('includes/footer') %>
+          
+          <%- include('includes/messages') %>
+          
+          <div class="display-login">
+
+                    <div class="sing-in">
+
+                         <div class="titulos">
+                              <h1>Faça seu Cadastro</h1>
+                              <p>Se você ainda não tem conta, preencha o formulário abaixo:</p>
+                         </div>
+                         <form class="form-cadastro" action="/login/register" method="post">
+                              <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                              <div class="cadastro-form-group">
+                                   <label for="cemail">Digite seu e-mail</label>
+                                   <input class="cadastro-form-control" type="email" name="email"
+                                        placeholder="Digite seu E-mail" id="cemail" autocomplete="email" required>
+                              </div>
+                              <div class="cadastro-form-group">
+                                   <label for="cpass">Sua senha</label>
+                                   <input class="cadastro-form-control" type="password" name="password" id="cpass"
+                                        placeholder="Digite sua senha" autocomplete="new-password" required>
+                              </div>
+                              <button type="submit" class="cpass">Criar minha conta</button>
+                         </form>
+                    </div>
+                    <div class="log-in">
+                         <div class="titulos">
+                              <h1>Faça seu Login</h1>
+                              <p>Se você já tem uma conta, faça login abaixo:</p>
+                         </div>
+
+                         <form class="form-login" action="/login/login" method="post">
+                              <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                              <div class="form-login-group">
+                                   <label for="lemail">Digite seu e-mail</label>
+                                   <input class="form-login-control" type="email" name="email" id="lemail"
+                                        placeholder="Digite seu E-mail" autocomplete="email" required>
+                              </div>
+
+                              <div class="form-login-group">
+                                   <label for="lpass">Sua senha</label>
+                                   <input class="form-login-control" type="password" name="password" id="lpass"
+                                        placeholder="Digite sua senha" autocomplete="new-password" required>
+                              </div>
+
+                              <button type="submit" class="">Entrar</button>
+                         </form>
+                    </div>
+               </div>
+               <%- include('includes/footer') %>
