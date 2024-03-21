@@ -1,36 +1,48 @@
 <%- include('includes/head') %>
      <%- include('includes/navbar') %>
           <div class="contato">
-               <form class="form-contato" action="/" method="post">
-                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-                    <!-- <input class="" type="text" name="name" id="cname" placeholder="Digite seu nome" required> -->
+               <% if (contato._id) {%>
+                    <form class="form-contato" action="/contato/edit/<%= contato._id %>" method="post">
+                         <%} else {%>
+                              <form class="form-contato" action="/contato/register" method="post">
+                                   <%}%>
+                                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
 
-                    <h1>Adicione o seu contato</h1>
+                                        <% if (contato._id) {%>
+                                        <h1>Edite o seu contato</h1>
+                                        <%} else {%>
+                                             <h1>Adicione o seu contato</h1>
+                                             
+                                             <%}%>
 
-                    <div class="contato-group">
-                         <label for="contato-name">Digite seu nome</label>
-                         <input type="text" name="contato-name" id="contato-name" placeholder="Digite seu Nome"
-                              required>
-                    </div>
+                                        <%- include('includes/messages')%>
 
-                    <div class="contato-group">
-                         <label for="contato-sobrenome">Digite seu Sobrenome</label>
-                         <input type="text" name="contato-sobrenome" id="contato-sobrenome"
-                              placeholder="Digite seu Sobrenome" required>
-                    </div>
+                                             <div class="contato-group">
+                                                  <label for="contato-name">Digite seu nome</label>
+                                                  <input value="<%= contato.nome %>" type="text" name="name"
+                                                       id="contato-name" placeholder="Digite seu Nome">
+                                             </div>
 
-                    <div class="contato-group">
-                         <label for="contato-email">E-mail</label>
-                         <input type="email" name="contato-email" id="contato-email" placeholder="Digite seu E-mail"
-                              required>
-                    </div>
-                    <div class="contato-group">
-                         <label for="contato-numero">Número</label>
-                         <input type="text" name="contato-numero" id="contato-numero" placeholder="Digite seu Número"
-                              required>
-                    </div>
-                    <button type="submit" class="">Adicionar Contato</button>
-               </form>
+                                             <div class="contato-group">
+                                                  <label for="contato-sobrenome">Digite seu Sobrenome</label>
+                                                  <input value="<%= contato.sobrenome %>" type="text" name="sobrenome"
+                                                       id="contato-sobrenome" placeholder="Digite seu Sobrenome">
+                                             </div>
+
+                                             <div class="contato-group">
+                                                  <label for="contato-email">Digite seu E-mail</label>
+                                                  <input value="<%= contato.email %>" type="email" name="email"
+                                                       id="contato-email" placeholder="Digite seu E-mail">
+                                             </div>
+                                             <div class="contato-group">
+                                                  <label for="contato-numero">Digite seu Telefone</label>
+                                                  <input value="<%= contato.telefone %>" type="tel" name="telefone"
+                                                       id="contato-numero" placeholder="(xx) xxxxx-xxxx" maxlength="11">
+                                             </div>
+                                 
+                                                  <button type="submit" class="">Salvar</button>
+                                                  
+                              </form>
           </div>
 
           <%- include('includes/footer') %>

@@ -1,4 +1,5 @@
 const Login = require('../models/LoginModel');
+
 exports.index = (req, res) => {
   if (req.session.user) return res.render('login-logado');
   return res.render('login');
@@ -41,10 +42,11 @@ exports.login = async function (req, res) {
       return;
     }
 
-    req.flash('success', 'Seu fez login com sucesso!.');
+    req.flash('success', 'Você fez login com sucesso! Seja bem vindo.');
     req.session.user = login.user;
     req.session.save(function () {
-      return res.redirect('/login/index');
+      // return res.redirect('/login/index');
+    res.redirect('/');
     });
 
   } catch (e) {

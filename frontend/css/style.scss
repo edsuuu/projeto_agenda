@@ -105,13 +105,13 @@ nav {
 }
 .alert-danger {
         margin: auto;
-        width: 400px;
+        width: 500px;
+        padding: 10px 20px;
         font-size: 1.1rem;
         background-color: rgba(255, 192, 203, 0.623);
         border-radius: 10px;
         border: none;
         color: rgb(124, 1, 1);
-        padding: 10px;
         margin-bottom: 40px;
         text-align: center;
 }
@@ -271,14 +271,11 @@ nav {
 .contato {
         width: 1400px;
         margin: auto;
-        
-        
-        .form-contato{
-        
-                
-                margin: 150px;
+
+        .form-contato {
+                margin: 100px;
                 padding-top: 20px;
-                padding-bottom:50px;
+                padding-bottom: 50px;
                 width: auto;
                 display: flex;
                 justify-content: center;
@@ -286,15 +283,15 @@ nav {
                 flex-direction: column;
                 border: 1px solid black;
 
-                h1{
+                h1 {
                         margin-top: 25px;
                         margin-bottom: 25px;
                 }
                 button {
                         margin-top: 10px;
                         letter-spacing: 1px;
-                        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-                                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+                                Geneva, Verdana, sans-serif;
                         padding: 10px 30px;
                         font-weight: bold;
                         border-radius: 10px;
@@ -307,15 +304,15 @@ nav {
                         background-color: rgba(50, 50, 216, 0.671);
                 }
 
-                .contato-group{ 
+                .contato-group {
                         border: 1px;
                         padding: 10px;
                         display: flex;
                         flex-direction: column;
-                        label{
-                                font-size: 1.1rem;     
+                        label {
+                                font-size: 1.1rem;
                         }
-                        input{
+                        input {
                                 border: 1px solid black;
                                 font-size: 1rem;
                                 border-radius: 10px;
@@ -323,7 +320,6 @@ nav {
                         }
                 }
         }
-
 }
 
 .footer {

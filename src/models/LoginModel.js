@@ -35,17 +35,25 @@ class Login {
      }
 
      async register() {
+
+          if (!this.body.name){
+               this.errors.push('Nome é um campo obrigatório.')
+          }
+          
           this.valida();
+          
           if (this.errors.length > 0) return;
-
+          
           await this.userExists();
-
+          
           if (this.errors.length > 0) return;
-
+          
           const salt = bcryptjs.genSaltSync();
           this.body.password = bcryptjs.hashSync(this.body.password, salt);
-
+          
           this.user = await LoginModel.create(this.body);
+          
+          
      }
 
      async userExists() {
@@ -56,8 +64,8 @@ class Login {
      valida() {
           this.cleanUp();
 
-          
-          
+
+
           if (!validator.isEmail(this.body.email)) this.errors.push('E-mail inválido');
           
           if (this.body.password.length < 3 || this.body.password.length > 50) {
