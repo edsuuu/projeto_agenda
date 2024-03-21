@@ -1,6 +1,6 @@
 # CRUD PROJETO AGENDA
 
-## <a href="https://landing-page-nft-three.vercel.app/" target="_blank">Deploy</a>
+## <a href="" target="_blank">Deploy</a> (Sem link) 
 
 ### Home 
 <img src="/public/assets/images/Home.png" width="100%" height="auto" />
@@ -71,7 +71,7 @@ https://www.mongodb.com/cloud/atlas/register
 
 - Clicar em Connect
 
-<img src="/public/assets/images/informativo.png" width="100%" height="auto" />
+<img src="/public/assets/images/descricao.png" width="100%" height="auto" />
 
 ### Copiar sua chave 
 
