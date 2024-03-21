@@ -78,7 +78,7 @@ nav .nav-logado .btn-sair:hover {
 .container .container-agenda table {
   display: flex;
   flex-direction: column;
-  background-color: azure;
+  background-color: rgba(148, 255, 241, 0.329);
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
@@ -91,9 +91,22 @@ nav .nav-logado .btn-sair:hover {
   margin-bottom: 20px;
 }
 .container .container-agenda table tr td {
+  font-size: 1.3rem;
   font-weight: bold;
   padding: 10px;
-  background-color: aquamarine;
+}
+.container .container-agenda table tr td a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+.container .container-agenda table tr td a:hover {
+  text-decoration: underline;
+}
+.container .container-agenda table tr td .deletar {
+  color: red;
+}
+.container .container-agenda table tr td .editar {
+  color: rgb(1, 56, 5);
 }
 
 .alert-danger {

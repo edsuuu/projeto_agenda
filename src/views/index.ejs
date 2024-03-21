@@ -15,20 +15,20 @@
                                         <% contatos.forEach(contato=> { %>
                                              <tr>
                                                   <td>
-                                                       <%= contato.nome %>
+                                                       Nome: <%= contato.nome %>
                                                   </td>
                                                   <td>
-                                                       <%= contato.sobrenome %>
+                                                      Sobrenome:  <%= contato.sobrenome %>
                                                   </td>
                                                   <td>
-                                                       <%= contato.email %>
+                                                      Email: <%= contato.email %>
                                                   </td>
                                                   <td>
-                                                       <%= contato.telefone %>
+                                                      Telefone: <%= contato.telefone %>
                                                   </td>
 
-                                                  <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
-                                                  <td><a href="/contato/delete/<%= contato._id %>">Excluir</a></td>
+                                                  <td><a class="editar" href="/contato/index/<%= contato._id %>">Editar</a></td>
+                                                  <td><a class="deletar" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
                                              </tr>
 
                                              <% }); %>
