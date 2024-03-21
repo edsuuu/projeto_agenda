@@ -53,10 +53,36 @@ cd projeto_agenda
 
 ### Instalar as Dependencias
 
-
 ```bash
 npm install
 ```
+### 
+
+
+### Conectar ao banco mongoDB, Criar uma Conta no site
+
+```bash
+https://www.mongodb.com/cloud/atlas/register
+```
+
+### Criar uma cluster Free no mongodb
+
+<img src="/public/assets/images/CRIADA.png" width="100%" height="auto" />
+
+- Clicar em Connect
+
+<img src="/public/assets/images/INFORMATIVO.png" width="100%" height="auto" />
+
+### Copiar sua chave 
+
+<img src="/public/assets/images/CONECTAR.png" width="100%" height="auto" />
+
+### Alterar a chave da .env 
+
+<img src="/public/assets/images/dotenv.png" width="100%" height="auto" />
+
+###
+
 ### Iniciar o projeto Local
 
 ```bash
