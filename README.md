@@ -6,27 +6,27 @@
 <img src="/public/assets/images/Home.png" width="100%" height="auto" />
 
 ### Cadastro e login 
-<img src="/public/assets/images/CADASTRO E LOGIN.png.png" width="100%" height="auto" />
+<img src="/public/assets/images/CADASTRO E LOGIN.png" width="100%" height="auto" />
 
 ### Autenticado 
-<img src="/public/assets/images/AUTENTICADO.png.png" width="100%" height="auto" />
+<img src="/public/assets/images/AUTENTICADO.png" width="100%" height="auto" />
 
 ### Contato Criado 
-<img src="/public/assets/images/CONTATO CRIADO.png.png" width="100%" height="auto" />
+<img src="/public/assets/images/CONTATO CRIADO.png" width="100%" height="auto" />
 
 ### Descrição
 
-Projeto é um crud de contatos de uma agenda,
+- Projeto é um crud de contatos de uma agenda,
 
-Usuario é cadastrado e adicionado ao banco de dados
+- Usuario é cadastrado e adicionado ao banco de dados
 
-Nome, Email e Senha.
+- Nome, Email e Senha.
 
-Senha com hash para cadastrar dentro do banco de dados
+- Senha com hash para cadastrar dentro do banco de dados
 
-Cadastrar / Olhar / Editar / Deletar Contatos
+- Cadastrar / Olhar / Editar / Deletar Contatos
 
-Nome, Sobrenome, Email e Telefone
+- Nome, Sobrenome, Email e Telefone
 
 
 ### Tecnologias
