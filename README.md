@@ -1,7 +1,5 @@
 # CRUD PROJETO AGENDA
 
-## <a href="" target="_blank">Deploy</a> (Sem link) 
-
 ### Home 
 <img src="/public/assets/images/Home.png" width="100%" height="auto" />
 
