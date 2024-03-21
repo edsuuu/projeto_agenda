@@ -71,7 +71,7 @@ https://www.mongodb.com/cloud/atlas/register
 
 - Clicar em Connect
 
-<img src="/public/assets/images/INFORMATIVO.png" width="100%" height="auto" />
+<img src="/public/assets/images/informativo.png" width="100%" height="auto" />
 
 ### Copiar sua chave 
 
